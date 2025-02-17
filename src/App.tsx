@@ -58,14 +58,14 @@ const questions = [
         reponse: "l'albatros",
         indices: ["C'est un oiseau marin", "Il est maladroit sur terre", "Le titre du poème le révèle"],
         livre: "Les Fleurs du Mal - Baudelaire",
-        pdfLink: "https://www.gutenberg.org/files/36098/36098-pdf.pdf"
+        pdfLink: "https://www.vousnousils.fr/casden/pdf/id00106.pdf"
     },
     {
         question: "Dans 'Candide', quel est le nom du pays imaginaire où tout est parfait selon le maître Pangloss ?",
         reponse: "eldorado",
         indices: ["C'est un pays légendaire", "On y trouve beaucoup d'or", "C'est en Amérique du Sud"],
         livre: "Candide - Voltaire",
-        pdfLink: "https://www.vousnousils.fr/casden/pdf/id00106.pdf"
+        pdfLink: "https://www.ebooksgratuits.com/blackmask/voltaire_candide.pdf"
     },
     {
         question: "Dans 'Le Comte de Monte-Cristo', sous quel nom Edmond Dantès se présente-t-il à Paris ?",

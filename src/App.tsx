@@ -68,9 +68,9 @@ const questions = [
         pdfLink: "https://www.ebooksgratuits.com/blackmask/voltaire_candide.pdf"
     },
     {
-        question: "Dans 'Le Comte de Monte-Cristo', sous quel nom Edmond Dantès se présente-t-il à Paris ?",
-        reponse: "le comte de monte-cristo",
-        indices: ["C'est le titre d'une île", "Il prend ce nom après sa fortune", "C'est son titre de noblesse"],
+        question: "Dans 'Le Comte de Monte-Cristo', quel est le nom du geôlier sourd-muet qui s'occupe de Faria et Dantès au château d'If ?",
+        reponse: "antonio",
+        indices: ["Il est décrit comme un geôlier compatissant", "Son prénom est d'origine italienne", "Il aide parfois Faria en lui donnant plus de nourriture"],
         livre: "Le Comte de Monte-Cristo - Alexandre Dumas",
         pdfLink: "https://beq.ebooksgratuits.com/vents/Dumas_Le_comte_de_Monte_Cristo_1.pdf"
     }

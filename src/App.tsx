@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import {FormEvent, useState} from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { AlertCircle, Book } from 'lucide-react';
@@ -85,7 +85,7 @@ const QuizApp = () => {
     const [gameFinished, setGameFinished] = useState(false);
     const [feedback, setFeedback] = useState('');
 
-    const handleSubmit = (e) => {
+    const handleSubmit = (e: FormEvent) => {
         e.preventDefault();
         const isCorrect = userAnswer.toLowerCase().trim() === questions[currentQuestion].reponse.toLowerCase();
 

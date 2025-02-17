@@ -84,6 +84,7 @@ const QuizApp = () => {
     const [showIndice, setShowIndice] = useState(false);
     const [gameFinished, setGameFinished] = useState(false);
     const [feedback, setFeedback] = useState('');
+    const [skippedQuestions, setSkippedQuestions] = useState(new Set());
 
     const handleSubmit = (e: FormEvent) => {
         e.preventDefault();
@@ -93,18 +94,27 @@ const QuizApp = () => {
             setScore(score + 1);
             setFeedback('Correct! 🎉');
             setTimeout(() => {
-                if (currentQuestion < questions.length - 1) {
-                    setCurrentQuestion(currentQuestion + 1);
-                    setUserAnswer('');
-                    setIndiceIndex(0);
-                    setShowIndice(false);
-                    setFeedback('');
-                } else {
-                    setGameFinished(true);
-                }
+                nextQuestion();
             }, 1000);
         } else {
             setFeedback('Incorrect. Essayez encore ou demandez un indice.');
+        }
+    };
+
+    const skipQuestion = () => {
+        setSkippedQuestions(prev => new Set([...prev, currentQuestion]));
+        nextQuestion();
+    };
+
+    const nextQuestion = () => {
+        if (currentQuestion < questions.length - 1) {
+            setCurrentQuestion(currentQuestion + 1);
+            setUserAnswer('');
+            setIndiceIndex(0);
+            setShowIndice(false);
+            setFeedback('');
+        } else {
+            setGameFinished(true);
         }
     };
 
@@ -123,6 +133,7 @@ const QuizApp = () => {
         setShowIndice(false);
         setGameFinished(false);
         setFeedback('');
+        setSkippedQuestions(new Set());
     };
 
     const getFinalMessage = () => {
@@ -185,6 +196,14 @@ const QuizApp = () => {
                                         Indice ({indiceIndex}/3)
                                     </Button>
                                 </div>
+                                <Button
+                                    type="button"
+                                    variant="outline"
+                                    onClick={skipQuestion}
+                                    className="w-full mt-2"
+                                >
+                                    Passer à la question suivante
+                                </Button>
                             </form>
                             {showIndice && indiceIndex > 0 && (
                                 <div className="mt-4 p-4 bg-blue-950 rounded-md border border-blue-800">
@@ -205,6 +224,11 @@ const QuizApp = () => {
                             )}
                             <div className="text-sm opacity-70">
                                 Score actuel: {score}/{currentQuestion + 1}
+                                {skippedQuestions.size > 0 && (
+                                    <span className="ml-4">
+                    Questions passées: {skippedQuestions.size}
+                  </span>
+                                )}
                             </div>
                         </div>
                     ) : (
@@ -215,12 +239,17 @@ const QuizApp = () => {
                             <div className="text-lg">
                                 Score final: {score}/10
                             </div>
+                            {skippedQuestions.size > 0 && (
+                                <div className="text-sm opacity-70">
+                                    Questions passées: {skippedQuestions.size}
+                                </div>
+                            )}
                             <div className="text-lg">
                                 {getFinalMessage()}
                             </div>
                             <Button
                                 onClick={restartQuiz}
-                                className="mt-4 bg-blue-200 hover:bg-blue-200"
+                                className="mt-4 bg-blue-400 hover:bg-blue-500"
                             >
                                 Recommencer le quiz
                             </Button>

@@ -30,7 +30,7 @@ const questions = [
         reponse: "agnes",
         indices: ["C'est un prénom chrétien", "Sa mère le révèle à la fin", "Elle ne le sait pas elle-même"],
         livre: "Notre-Dame de Paris - Victor Hugo",
-        pdfLink: "https://www.bibebook.com/files/ebook/libre/V2/hugo_victor_-_notre-dame_de_paris.pdf"
+        pdfLink: "https://ebooks-bnr.com/ebooks/pdf4/hugo_notre_dame_de_paris.pdf"
     },
     {
         question: "Dans 'Les Trois Mousquetaires', quel est le véritable nom de Milady de Winter?",
@@ -58,14 +58,14 @@ const questions = [
         reponse: "5",
         indices: ["Ces poèmes forment une section spécifique", "Ils incluent l'âme du vin", "Ils décrivent différents types de buveurs"],
         livre: "Les Fleurs du Mal - Baudelaire",
-        pdfLink: "https://www.vousnousils.fr/casden/pdf/id00106.pdf"
+        pdfLink: "https://www.ebooksgratuits.com/pdf/baudelaire_les_fleurs_du_mal.pdf"
     },
     {
         question: "Dans 'Candide', quel est le nom du pays imaginaire où tout est parfait selon le maître Pangloss ?",
         reponse: "eldorado",
         indices: ["C'est un pays légendaire", "On y trouve beaucoup d'or", "C'est en Amérique du Sud"],
         livre: "Candide - Voltaire",
-        pdfLink: "https://www.ebooksgratuits.com/blackmask/voltaire_candide.pdf"
+        pdfLink: "https://ebooks-bnr.com/ebooks/pdf4/voltaire_candide.pdf"
     },
     {
         question: "Dans 'Le Comte de Monte-Cristo', quel numéro de cachot occupe Edmond Dantès au château d'If ?",
@@ -114,15 +114,8 @@ const questions = [
         reponse: "La marquise de merteuil",
         indices: ["Elle cherche à manipuler Cécile et son entourage", "Elle utilise la séduction comme un instrument de pouvoir", "Cette lettre est écrite à un homme influent dans le destin de Cécile"],
         livre: "Les Liaisons dangereuses - Choderlos de Laclos",
-        pdfLink: "https://www.ebooksgratuits.com/ebooksfrance/laclos_liaisons_dangereuses.pdf"
+        pdfLink: "https://ebooks-bnr.com/ebooks/pdf4/laclos_les_liaisons_dangereuses.pdf"
     },
-    {
-        question: "Dans 'Cyrano de Bergerac', quel est le nom du pâtissier-poète qui fait partie des Cadets de Gascogne ?",
-        reponse: "ragueneau",
-        indices: ["Il nourrit souvent les poètes gratuitement", "Il transforme ses recettes en poèmes", "Sa femme Lise le quitte pour un mousquetaire"],
-        livre: "Cyrano de Bergerac - Edmond Rostand",
-        pdfLink: "https://libretheatre.fr/wp-content/uploads/2016/05/cyrano_de_bergerac_Rostand_LT.pdf"
-    }
 ];
 
 const QuizApp = () => {

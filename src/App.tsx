@@ -6,7 +6,7 @@ import { AlertCircle, Book } from 'lucide-react';
 const questions = [
     {
         question: "Dans 'Les Misérables', quel objet Jean Valjean vole-t-il à l'évêque Myriel qui changera sa vie ?",
-        reponse: "des chandeliers",
+        reponse: "chandelier",
         indices: ["C'est un objet en argent", "Il y en a plusieurs", "Ils servent à éclairer"],
         livre: "Les Misérables - Victor Hugo",
         pdfLink: "https://beq.ebooksgratuits.com/vents/Hugo-miserables-1.pdf"
@@ -54,9 +54,9 @@ const questions = [
         pdfLink: "https://beq.ebooksgratuits.com/vents/Stendhal-rouge.pdf"
     },
     {
-        question: "Dans 'Les Fleurs du Mal', quel animal représente le poète dans le poème 'L'Albatros' ?",
-        reponse: "l'albatros",
-        indices: ["C'est un oiseau marin", "Il est maladroit sur terre", "Le titre du poème le révèle"],
+        question: "Dans 'Les Fleurs du Mal', combien de poèmes ont pour thème principal le vin ?",
+        reponse: "5",
+        indices: ["Ces poèmes forment une section spécifique", "Ils incluent l'âme du vin", "Ils décrivent différents types de buveurs"],
         livre: "Les Fleurs du Mal - Baudelaire",
         pdfLink: "https://www.vousnousils.fr/casden/pdf/id00106.pdf"
     },

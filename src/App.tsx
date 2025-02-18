@@ -5,8 +5,8 @@ import { AlertCircle, Book } from 'lucide-react';
 
 const questions = [
     {
-        question: "Dans 'Les Misérables', quel objet Jean Valjean vole-t-il à l'évêque Myriel qui changera sa vie ?",
-        reponse: "chandelier",
+        question: "Dans 'Les Misérables', quel objet en argent l'évêque Myriel offre-t-il à Jean Valjean, qui change sa vie ?",
+        reponse: "chandeliers",
         indices: ["C'est un objet en argent", "Il y en a plusieurs", "Ils servent à éclairer"],
         livre: "Les Misérables - Victor Hugo",
         pdfLink: "https://beq.ebooksgratuits.com/vents/Hugo-miserables-1.pdf"
@@ -19,9 +19,9 @@ const questions = [
         pdfLink: "https://beq.ebooksgratuits.com/balzac/Balzac-39.pdf"
     },
     {
-        question: "Dans 'Madame Bovary', dans quelle ville Charles Bovary rencontre-t-il Emma pour la première fois ?",
+        question: "Dans 'Madame Bovary', à quelle famille appartient la ferme dans laquelle Charles Bovary rencontre Emma pour la première fois ?",
         reponse: "bertaux",
-        indices: ["C'est une ferme", "C'est là où vit le père d'Emma", "C'est lors d'une visite médicale"],
+        indices: ["Le père d'Emma est fermier", "La ferme se situe dans un petit village", "Charles y va en tant que médecin"],
         livre: "Madame Bovary - Flaubert",
         pdfLink: "https://beq.ebooksgratuits.com/vents/Flaubert-Bovary.pdf"
     },
@@ -33,7 +33,7 @@ const questions = [
         pdfLink: "https://www.bibebook.com/files/ebook/libre/V2/hugo_victor_-_notre-dame_de_paris.pdf"
     },
     {
-        question: "Dans 'Les Trois Mousquetaires', quel est le véritable nom de Milady de Winter ?",
+        question: "Dans 'Les Trois Mousquetaires', quel est le véritable nom de Milady de Winter?",
         reponse: "anne de breuil",
         indices: ["Elle a été marquée au fer", "Elle était religieuse", "C'est son premier nom connu"],
         livre: "Les Trois Mousquetaires - Alexandre Dumas",
@@ -54,7 +54,7 @@ const questions = [
         pdfLink: "https://beq.ebooksgratuits.com/vents/Stendhal-rouge.pdf"
     },
     {
-        question: "Dans 'Les Fleurs du Mal', combien de poèmes ont pour thème principal le vin ?",
+        question: "Dans 'Les Fleurs du Mal', combien de poèmes ont pour thème principal le vin?",
         reponse: "5",
         indices: ["Ces poèmes forment une section spécifique", "Ils incluent l'âme du vin", "Ils décrivent différents types de buveurs"],
         livre: "Les Fleurs du Mal - Baudelaire",
@@ -68,11 +68,60 @@ const questions = [
         pdfLink: "https://www.ebooksgratuits.com/blackmask/voltaire_candide.pdf"
     },
     {
-        question: "Dans 'Le Comte de Monte-Cristo', quel est le nom du geôlier sourd-muet qui s'occupe de Faria et Dantès au château d'If ?",
-        reponse: "antonio",
-        indices: ["Il est décrit comme un geôlier compatissant", "Son prénom est d'origine italienne", "Il aide parfois Faria en lui donnant plus de nourriture"],
+        question: "Dans 'Le Comte de Monte-Cristo', quel numéro de cachot occupe Edmond Dantès au château d'If ?",
+        reponse: "34",
+        indices: ["C'est un nombre à deux chiffres", "C'est mentionné quand il rencontre l'abbé Faria", "C'est dans la tour sud"],
         livre: "Le Comte de Monte-Cristo - Alexandre Dumas",
         pdfLink: "https://beq.ebooksgratuits.com/vents/Dumas_Le_comte_de_Monte_Cristo_1.pdf"
+    },
+    {
+        question: "Dans 'Bel-Ami', quel est le premier article que Georges Duroy écrit pour La Vie Française ?",
+        reponse: "souvenirs d'un chasseur d'afrique",
+        indices: ["C'est lié à son expérience militaire", "Forestier l'aide à l'écrire", "Cela parle de l'Algérie"],
+        livre: "Bel-Ami - Guy de Maupassant",
+        pdfLink: "https://beq.ebooksgratuits.com/vents/Maupassant_Bel_Ami.pdf"
+    },
+    {
+        question: "Dans 'La Mare au Diable', quel est le prénom de la petite fille que garde Marie?",
+        reponse: "petit-pierre",
+        indices: ["C'est un prénom masculin", "C'est la fille de Germain", "Elle a environ 3 ans"],
+        livre: "La Mare au Diable - George Sand",
+        pdfLink: "https://beq.ebooksgratuits.com/vents/Sand-mare.pdf"
+    },
+    {
+        question: "Dans 'La Princesse de Clèves', quel est le véritable nom de la princesse ?",
+        reponse: "mademoiselle de chartres",
+        indices: ["Elle est issue de la haute noblesse", "Elle est souvent appelée par son titre plutôt que par son nom", "Le nom fait référence à une ville importante de France"],
+        livre: "La Princesse de Clèves - Madame de Lafayette",
+        pdfLink: "https://beq.ebooksgratuits.com/vents/Lafayette-princesse.pdf"
+    },
+    {
+        question: "Dans 'Paul et Virginie', quel est le nom du chien qui accompagne le vieux créole avec qui Paul et Virginie se perdent dans la forêt ?",
+        reponse: "fidele",
+        indices: ["Il aide à retrouver le chemin", "Son nom évoque une qualité morale", "Il appartient au vieil habitant égaré"],
+        livre: "Paul et Virginie - Bernardin de Saint-Pierre",
+        pdfLink: "https://beq.ebooksgratuits.com/vents/Saint-Pierre-Virginie.pdf"
+    },
+    {
+        question: "Dans 'Les Fables', quelle est la seule fable où La Fontaine se met en scène personnellement ?",
+        reponse: "le statuaire et la statue de jupiter",
+        indices: ["Il y parle à la première personne", "C'est dans le livre IX", "Il y critique l'orgueil"],
+        livre: "Les Fables - Jean de La Fontaine",
+        pdfLink: "https://beq.ebooksgratuits.com/vents/Lafontaine-fables-1.pdf"
+    },
+    {
+        question: "Dans 'Les Liaisons Dangereuses', quel personnage écrit la lettre qui déclenche la chute de la jeune Cécile de Volanges ?",
+        reponse: "La marquise de merteuil",
+        indices: ["Elle cherche à manipuler Cécile et son entourage", "Elle utilise la séduction comme un instrument de pouvoir", "Cette lettre est écrite à un homme influent dans le destin de Cécile"],
+        livre: "Les Liaisons dangereuses - Choderlos de Laclos",
+        pdfLink: "https://www.ebooksgratuits.com/ebooksfrance/laclos_liaisons_dangereuses.pdf"
+    },
+    {
+        question: "Dans 'Cyrano de Bergerac', quel est le nom du pâtissier-poète qui fait partie des Cadets de Gascogne ?",
+        reponse: "ragueneau",
+        indices: ["Il nourrit souvent les poètes gratuitement", "Il transforme ses recettes en poèmes", "Sa femme Lise le quitte pour un mousquetaire"],
+        livre: "Cyrano de Bergerac - Edmond Rostand",
+        pdfLink: "https://libretheatre.fr/wp-content/uploads/2016/05/cyrano_de_bergerac_Rostand_LT.pdf"
     }
 ];
 
@@ -137,9 +186,15 @@ const QuizApp = () => {
     };
 
     const getFinalMessage = () => {
-        if (score === 10) return "Parfait! Vous êtes un véritable expert de la littérature française! 🏆";
-        if (score >= 7) return "Excellent! Vous connaissez très bien vos classiques! 📚";
-        if (score >= 5) return "Pas mal! Vous avez une bonne connaissance des œuvres! 👏";
+        if (score === questions.length)
+            return "Parfait! Vous êtes un véritable expert de la littérature française! 🏆";
+
+        if (score >= questions.length * 2 / 3)
+            return "Excellent! Vous connaissez très bien vos classiques! 📚";
+
+        if (score >= questions.length / 3)
+            return "Pas mal! Vous avez une bonne connaissance des œuvres! 👏";
+
         return "Ces livres méritent d'être (re)lus! Bon courage dans vos lectures! 📖";
     };
 
@@ -148,20 +203,20 @@ const QuizApp = () => {
             <Card className="max-w-2xl mx-auto">
                 <CardHeader>
                     <CardTitle className="text-2xl text-center">
-                        Quiz des Classiques de la Littérature Française
+                        Quiz des classiques de la littérature française
                     </CardTitle>
                 </CardHeader>
                 <CardContent>
                     {!gameFinished ? (
                         <div className="space-y-6">
                             <div className="text-sm opacity-70 mb-4">
-                                Question {currentQuestion + 1}/10
+                                Question {currentQuestion + 1}/{questions.length}
                             </div>
                             <div className="font-medium mb-4 flex items-center justify-between">
                                 <span>{questions[currentQuestion].livre}</span>
                                 <Button
                                     variant="default"
-                                    className="bg-blue-400 hover:bg-blue-500"
+                                    className="bg-blue-400 hover:bg-blue-500 ms-4"
                                     onClick={() => window.open(questions[currentQuestion].pdfLink, '_blank')}
                                 >
                                     <Book className="h-4 w-4 mr-2" />
@@ -200,7 +255,7 @@ const QuizApp = () => {
                                     type="button"
                                     variant="outline"
                                     onClick={skipQuestion}
-                                    className="w-full mt-2"
+                                    className="w-full mt-2 bg-gray-900 hover:bg-gray-700"
                                 >
                                     Passer à la question suivante
                                 </Button>
@@ -223,11 +278,11 @@ const QuizApp = () => {
                                 </div>
                             )}
                             <div className="text-sm opacity-70">
-                                Score actuel: {score}/{currentQuestion + 1}
+                                Score actuel: {score}/{questions.length}
                                 {skippedQuestions.size > 0 && (
                                     <span className="ml-4">
-                    Questions passées: {skippedQuestions.size}
-                  </span>
+                                        Questions passées: {skippedQuestions.size}
+                                    </span>
                                 )}
                             </div>
                         </div>
@@ -237,7 +292,7 @@ const QuizApp = () => {
                                 Quiz terminé!
                             </div>
                             <div className="text-lg">
-                                Score final: {score}/10
+                                Score final: {score}/{questions.length}
                             </div>
                             {skippedQuestions.size > 0 && (
                                 <div className="text-sm opacity-70">
